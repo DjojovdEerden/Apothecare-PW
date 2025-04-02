@@ -22,4 +22,4 @@ if ($stmt->execute()) {
 echo "<script>setTimeout(() => { window.location.href = 'klantbeheer.php'; }, 2000);</script>";
 ?>
 
-<a href="body.php">Terug naar Klantbeheer</a>
+<a href="klantbeheer.php">Terug naar Klantbeheer</a>

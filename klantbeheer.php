@@ -34,8 +34,8 @@
                             <td>" . $row["naam"] . "</td>
                             <td>" . $row["email"] . "</td>
                             <td>" . $row["telefoon"] . "</td>
-                            <td><a href='bewerken.php?id=" . $row["id"] . "'>Bewerken</a> | 
-                                <a href='verwijderen.php?id=" . $row["id"] . "' onclick='return confirm('Weet je zeker dat je deze klant wilt verwijderen?')'>Verwijderen</a>
+                            <td><a href='klantbewerken.php?id=" . $row["id"] . "'>Bewerken</a> | 
+                                <a href='klantverwijderen.php?id=" . $row["id"] . "' onclick='return confirm('Weet je zeker dat je deze klant wilt verwijderen?')'>Verwijderen</a>
                             </td>
                           </tr>";
                 }
