@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/login.register.css">
+    <link rel="stylesheet" href="login.register.css">
 </head>
 
 <body>
@@ -21,11 +21,11 @@
             <input type="text" name="email" id="email" placeholder="Enter your email">
 
             <h3>Password</h3>
-            <input type="text" name="password" id="password" placeholder="enter-Password">
+            <input type="text" name="password" id="password" placeholder="Enter Password">
         </div>
-
+        <div class="button-textalign">
         <input type="checkbox" id="remember" style="vertical-align: middle;">Remember me
-        <br><br>
+        </div>
 
 
 
