@@ -54,6 +54,9 @@ foreach ($products as $product) {
 
 // Filter by category if set
 $filter_category = isset($_GET['category']) ? $_GET['category'] : null;
+
+// Handle search
+$search_term = isset($_GET['search']) ? trim($_GET['search']) : '';
 ?>
 
 <!DOCTYPE html>
@@ -63,6 +66,7 @@ $filter_category = isset($_GET['category']) ? $_GET['category'] : null;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products - Apothecare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
         .product-card { 
             border: 1px solid #ddd; 
@@ -80,6 +84,13 @@ $filter_category = isset($_GET['category']) ? $_GET['category'] : null;
         .product-image { height: 200px; object-fit: contain; }
         .in-stock { color: #27ae60; }
         .out-of-stock { color: #e74c3c; }
+        .search-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
     </style>
 </head>
 <body>
@@ -110,31 +121,63 @@ $filter_category = isset($_GET['category']) ? $_GET['category'] : null;
 
     <!-- Products Section -->
     <div class="container mb-5">
-        <div class="row mb-4">
-            <div class="col-md-8">
-                <h1>All Products</h1>
-            </div>
-            <div class="col-md-4">
-                <div class="d-flex justify-content-end">
-                    <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="categoryDropdown" 
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            <?= $filter_category ? "Category: $filter_category" : 'Filter by Category' ?>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                            <li><a class="dropdown-item" href="products.php">All Categories</a></li>
+        <h1 class="mb-4">All Products</h1>
+        
+        <!-- Combined Search and Filter -->
+        <div class="search-container">
+            <form action="products.php" method="GET">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="text" name="search" class="form-control" placeholder="Search products..." 
+                                value="<?= htmlspecialchars($search_term) ?>" aria-label="Search products">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-search"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="category" class="form-select" aria-label="Filter by category">
+                            <option value="">All Categories</option>
                             <?php foreach($categories as $category): ?>
-                            <li><a class="dropdown-item" href="products.php?category=<?= urlencode($category) ?>"><?= $category ?></a></li>
+                            <option value="<?= $category ?>" <?= $filter_category === $category ? 'selected' : '' ?>>
+                                <?= $category ?>
+                            </option>
                             <?php endforeach; ?>
-                        </ul>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <?php if ($search_term || $filter_category): ?>
+                        <a href="products.php" class="btn btn-outline-secondary w-100">
+                            <i class="bi bi-x-circle"></i> Clear All
+                        </a>
+                        <?php else: ?>
+                        <button type="submit" class="btn btn-outline-primary w-100">Apply</button>
+                        <?php endif; ?>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
 
         <div class="row">
-            <?php foreach($products as $product): ?>
-                <?php if ($filter_category === null || $product['category'] === $filter_category): ?>
+            <?php 
+            $found_products = false;
+            foreach($products as $product): 
+                // Apply category filter if set
+                if ($filter_category !== null && $product['category'] !== $filter_category) {
+                    continue;
+                }
+                
+                // Apply search filter if term is provided
+                if ($search_term !== '' && 
+                    stripos($product['name'], $search_term) === false && 
+                    stripos($product['description'], $search_term) === false &&
+                    stripos($product['category'], $search_term) === false) {
+                    continue;
+                }
+                
+                $found_products = true;
+            ?>
                 <div class="col-md-4 mb-4">
                     <div class="product-card h-100">
                         <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/200x200?text=No+Image' ?>" 
@@ -156,8 +199,27 @@ $filter_category = isset($_GET['category']) ? $_GET['category'] : null;
                         </div>
                     </div>
                 </div>
-                <?php endif; ?>
             <?php endforeach; ?>
+            
+            <?php if (!$found_products): ?>
+                <div class="col-12 text-center py-5">
+                    <div class="alert alert-info">
+                        <i class="bi bi-search" style="font-size: 2rem;"></i>
+                        <h4 class="mt-3">No products found</h4>
+                        <p>
+                            <?php if ($search_term): ?>
+                                No products match your search "<?= htmlspecialchars($search_term) ?>".
+                                <?php if ($filter_category): ?>
+                                    Try searching in all categories.
+                                <?php endif; ?>
+                            <?php else: ?>
+                                No products found in this category.
+                            <?php endif; ?>
+                        </p>
+                        <a href="products.php" class="btn btn-outline-primary mt-2">View all products</a>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 

@@ -76,6 +76,9 @@ foreach ($products as $p) {
         $related_products[] = $p;
     }
 }
+
+// Include the reviews system
+include('reviews.php');
 ?>
 
 <!DOCTYPE html>
@@ -85,6 +88,7 @@ foreach ($products as $p) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($product['name']) ?> - Apothecare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
         .product-image { height: 300px; object-fit: contain; }
         .product-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; }
@@ -92,6 +96,9 @@ foreach ($products as $p) {
         .product-price { font-size: 1.5rem; color: #27ae60; font-weight: bold; }
         .in-stock { color: #27ae60; }
         .out-of-stock { color: #e74c3c; }
+        .review-card { transition: transform 0.2s; }
+        .review-card:hover { transform: translateY(-3px); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .star-rating { display: inline-flex; }
     </style>
 </head>
 <body>
@@ -173,6 +180,22 @@ foreach ($products as $p) {
                 <?php else: ?>
                 <button class="btn btn-secondary" disabled>Out of Stock</button>
                 <?php endif; ?>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <hr>
+                <h2>Product Reviews</h2>
+                
+                <?php 
+                    // Display the review form first
+                    render_review_form($product_id);
+                    
+                    // Then display reviews for this product
+                    render_reviews_list($product_id);
+                ?>
             </div>
         </div>
 
