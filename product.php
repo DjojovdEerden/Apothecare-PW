@@ -128,6 +128,12 @@ foreach ($products as $p) {
         </div>
         <?php endif; ?>
 
+        <div class="mb-3">
+            <a href="products.php" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Back to Products
+            </a>
+        </div>
+
         <div class="row">
             <div class="col-md-6 mb-4">
                 <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/400x400?text=No+Image' ?>" 
