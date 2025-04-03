@@ -27,9 +27,9 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#Apothecare" data-after="shop">winklwagen</a></li>
-            <li><a href="#Apothecare" data-after="shop">login</a></li>
+            <li><a href="home.php" data-after="Home">Home</a></li>
+            <li><a href="products/cart.php" data-after="shop">winklwagen</a></li>
+            <li><a href="klant/login.php" data-after="shop">login</a></li>
           </ul>
         </div>
       </div>
