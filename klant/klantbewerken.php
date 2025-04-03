@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klant bewerken</title>
-    <link rel="stylesheet" href="klantbeheer.css">
+    <link rel="stylesheet" href="css/klantbeheer.css">
 </head>
 <body>
     <h2>Klantgegevens bewerken</h2>
@@ -58,8 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="telefoon" value="<?php echo htmlspecialchars($klant['telefoon']); ?>"><br>
         
         <button type="submit">Opslaan</button>
-        <a href="klantbeheer.php">Annuleren</a>
-        <a href="klantbeheer.php">Terug naar Klantbeheer</a>
+        <a href="klant/klantbeheer.php">Annuleren</a>
+        <a href="klant/klantbeheer.php">Terug naar Klantbeheer</a>
     </form>
 </body>
 </html>

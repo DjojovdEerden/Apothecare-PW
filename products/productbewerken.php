@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="korting" value="<?php echo htmlspecialchars($product['korting']); ?>"><br>
         
         <button type="submit">Opslaan</button>
-        <a href="productbeheer.php">Annuleren</a>
+        <a href="products/productbeheer.php">Annuleren</a>
     </form>
 </body>
 </html>

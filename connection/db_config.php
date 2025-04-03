@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'apothecare-pw');
+define('DB_NAME', 'apothecare');
 
 // Create database connection
 function get_db_connection() {

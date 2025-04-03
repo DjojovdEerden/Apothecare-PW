@@ -37,31 +37,7 @@ $products = get_products($filter_options);
     <title>All Products - Apothecare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <style>
-        .product-card { 
-            border: 1px solid #ddd; 
-            padding: 15px; 
-            margin-bottom: 20px; 
-            height: 100%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .navbar { background-color: #2c3e50; }
-        .product-price { font-size: 1.2rem; color: #27ae60; font-weight: bold; }
-        .product-image { height: 200px; object-fit: contain; }
-        .in-stock { color: #27ae60; }
-        .out-of-stock { color: #e74c3c; }
-        .search-container {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-    </style>
+    <link rel="stylesheet" href="css/products.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -118,7 +94,7 @@ $products = get_products($filter_options);
                     </div>
                     <div class="col-md-2">
                         <?php if ($search_term || $filter_category): ?>
-                        <a href="products.php" class="btn btn-outline-secondary w-100">
+                        <a href="products/products.php" class="btn btn-outline-secondary w-100">
                             <i class="bi bi-x-circle"></i> Clear All
                         </a>
                         <?php else: ?>
@@ -145,7 +121,7 @@ $products = get_products($filter_options);
                                 No products found in this category.
                             <?php endif; ?>
                         </p>
-                        <a href="products.php" class="btn btn-outline-primary mt-2">View all products</a>
+                        <a href="products/products.php" class="btn btn-outline-primary mt-2">View all products</a>
                     </div>
                 </div>
             <?php else: ?>
@@ -167,7 +143,7 @@ $products = get_products($filter_options);
                                     <span class="out-of-stock small">Out of Stock</span>
                                     <?php endif; ?>
                                 </div>
-                                <a href="product.php?id=<?= $product['id'] ?>" class="btn btn-primary btn-sm">View Details</a>
+                                <a href="products/product.php?id=<?= $product['id'] ?>" class="btn btn-primary btn-sm">View Details</a>
                             </div>
                         </div>
                     </div>

@@ -20,7 +20,7 @@ if (isset($_POST['confirm']) && $_POST['confirm'] == 'Ja') {
     }
     
     // Doorsturen naar productbeheer na 2 seconden
-    echo "<script>setTimeout(() => { window.location.href = 'productbeheer.php'; }, 2000);</script>";
+    echo "<script>setTimeout(() => { window.location.href = 'products/productbeheer.php'; }, 2000);</script>";
     exit;
 }
 ?>

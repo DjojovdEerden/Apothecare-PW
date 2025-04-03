@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.register.css">
+    <title>register</title>
+    <link rel="stylesheet" href="css/login.register.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Welcome Back</h1>
 
-        <form action="register.php" method="post">
+        <form action="klant/register.php" method="post">
 
-        <a href="login.php" id="btnRegisterLogin">Login</a>
+        <a href="klant/login.php" id="btnRegisterLogin">Login</a>
 
 
         <div class="input-styling">

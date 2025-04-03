@@ -25,7 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Toevoegen</title>
-    <link rel="stylesheet" href="body.css">
 </head>
 <body>
     <h2>Product Toevoegen</h2>
@@ -43,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="number" step="0.01" name="korting"><br>
         
         <button type="submit">Toevoegen</button>
-        <a href="productbeheer.php">Terug naar productbeheer</a>
+        <a href="products/productbeheer.php">Terug naar productbeheer</a>
     </form>
 </body>
 </html>

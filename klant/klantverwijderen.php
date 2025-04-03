@@ -19,7 +19,7 @@ if ($stmt->execute()) {
 }
 
 // Doorsturen naar klantbeheer na 2 seconden
-echo "<script>setTimeout(() => { window.location.href = 'klantbeheer.php'; }, 2000);</script>";
+echo "<script>setTimeout(() => { window.location.href = 'klant/klantbeheer.php'; }, 2000);</script>";
 ?>
 
-<a href="klantbeheer.php">Terug naar Klantbeheer</a>
+<a href="klant/klantbeheer.php">Terug naar Klantbeheer</a>

@@ -236,7 +236,7 @@ $total = $subtotal + $shipping + $tax;
                             </div>
                             <div class="d-grid gap-2">
                                 <a href="#" class="btn btn-primary">Proceed to Checkout</a>
-                                <a href="products.php" class="btn btn-outline-secondary">Continue Shopping</a>
+                                <a href="products/products.php" class="btn btn-outline-secondary">Continue Shopping</a>
                             </div>
                         </div>
                     </div>
