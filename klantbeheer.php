@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klantbeheer</title>
-    <link rel="stylesheet" href="klantbeheer.css">
+    <link rel="stylesheet" href="css/klantbeheer.css">
 </head>
 <body>
     <h2>Klantbeheer</h2>
