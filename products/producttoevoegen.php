@@ -1,5 +1,5 @@
 <?php
-require 'db_connect.php';
+require 'connection/db_config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $naam = $_POST['naam'];

@@ -1,5 +1,5 @@
 <?php
-require 'db_connect.php';
+require 'connection/db_config.php';
 
 // Haal product-ID op uit de URL
 if (!isset($_GET['id']) || empty($_GET['id'])) {

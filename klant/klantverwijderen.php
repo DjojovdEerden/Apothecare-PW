@@ -1,5 +1,5 @@
 <?php
-require 'db_connect.php';
+require 'connection/db_config.php';
 
 // Controleren of er een ID is meegegeven
 if (!isset($_GET['id']) || empty($_GET['id'])) {

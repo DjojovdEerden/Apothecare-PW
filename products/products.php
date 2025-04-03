@@ -54,7 +54,7 @@ $products = get_products($filter_options);
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                 </ul>
                 <div class="d-flex">
-                    <a href="cart.php" class="btn btn-outline-light">
+                    <a href="products/cart.php" class="btn btn-outline-light">
                         Cart
                         <?php if (!empty($_SESSION['cart'])): ?>
                         <span class="badge bg-danger"><?= array_sum($_SESSION['cart']) ?></span>

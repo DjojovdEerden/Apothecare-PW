@@ -21,7 +21,7 @@
         <tbody>
             <?php
             // Databaseverbinding inladen
-            require 'db_connect.php';
+            require 'connection/db_config.php';
 
             // Query om klantgegevens op te halen
             $sql = "SELECT * FROM klanten";
