@@ -31,7 +31,7 @@ if (isset($_POST['confirm']) && $_POST['confirm'] == 'Ja') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Verwijderen</title>
-    <link rel="stylesheet" href="body.css">
+    
 </head>
 <body>
     <h2>Weet je zeker dat je dit product wilt verwijderen?</h2>

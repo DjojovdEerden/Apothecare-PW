@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productbeheer</title>
-    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="css/productbeheer.css">
 </head>
 <body>
     <h2>Productbeheer</h2>
