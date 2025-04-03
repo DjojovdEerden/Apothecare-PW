@@ -4,59 +4,29 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-// Sample product data (same as in product.php)
-$products = [
-    1 => [
-        'id' => 1,
-        'name' => 'Vitamin C 1000mg',
-        'price' => 15.99,
-        'description' => 'High-strength vitamin C supplement that supports immune function.',
-        'image_url' => 'images/products/vitamin-c.jpg',
-        'category' => 'Supplements',
-        'in_stock' => 25
-    ],
-    2 => [
-        'id' => 2,
-        'name' => 'Omega-3 Fish Oil',
-        'price' => 19.99,
-        'description' => 'Pure fish oil supplement rich in omega-3 fatty acids for heart health.',
-        'image_url' => 'images/products/omega-3.jpg',
-        'category' => 'Supplements',
-        'in_stock' => 15
-    ],
-    3 => [
-        'id' => 3,
-        'name' => 'Hydrating Face Cream',
-        'price' => 24.99,
-        'description' => 'Rich, nourishing face cream that hydrates and soothes dry skin.',
-        'image_url' => 'images/products/face-cream.jpg',
-        'category' => 'Skincare',
-        'in_stock' => 8
-    ],
-    4 => [
-        'id' => 4,
-        'name' => 'First Aid Kit',
-        'price' => 29.99,
-        'description' => 'Complete first aid kit for home emergencies.',
-        'image_url' => 'images/products/first-aid.jpg',
-        'category' => 'Medical Supplies',
-        'in_stock' => 12
-    ]
-];
+// Include database configuration and functions
+require_once 'connection/db_config.php';
 
-// Get unique categories
-$categories = [];
-foreach ($products as $product) {
-    if (!in_array($product['category'], $categories)) {
-        $categories[] = $product['category'];
-    }
-}
+// Get categories for the filter dropdown
+$categories = get_categories();
 
 // Filter by category if set
 $filter_category = isset($_GET['category']) ? $_GET['category'] : null;
 
 // Handle search
 $search_term = isset($_GET['search']) ? trim($_GET['search']) : '';
+
+// Get products with filters applied
+$filter_options = [];
+if ($filter_category) {
+    $filter_options['category'] = $filter_category;
+}
+if ($search_term) {
+    $filter_options['search'] = $search_term;
+}
+
+// Get products from database
+$products = get_products($filter_options);
 ?>
 
 <!DOCTYPE html>
@@ -140,8 +110,8 @@ $search_term = isset($_GET['search']) ? trim($_GET['search']) : '';
                         <select name="category" class="form-select" aria-label="Filter by category">
                             <option value="">All Categories</option>
                             <?php foreach($categories as $category): ?>
-                            <option value="<?= $category ?>" <?= $filter_category === $category ? 'selected' : '' ?>>
-                                <?= $category ?>
+                            <option value="<?= htmlspecialchars($category['name']) ?>" <?= $filter_category === $category['name'] ? 'selected' : '' ?>>
+                                <?= htmlspecialchars($category['name']) ?>
                             </option>
                             <?php endforeach; ?>
                         </select>
@@ -160,48 +130,7 @@ $search_term = isset($_GET['search']) ? trim($_GET['search']) : '';
         </div>
 
         <div class="row">
-            <?php 
-            $found_products = false;
-            foreach($products as $product): 
-                // Apply category filter if set
-                if ($filter_category !== null && $product['category'] !== $filter_category) {
-                    continue;
-                }
-                
-                // Apply search filter if term is provided
-                if ($search_term !== '' && 
-                    stripos($product['name'], $search_term) === false && 
-                    stripos($product['description'], $search_term) === false &&
-                    stripos($product['category'], $search_term) === false) {
-                    continue;
-                }
-                
-                $found_products = true;
-            ?>
-                <div class="col-md-4 mb-4">
-                    <div class="product-card h-100">
-                        <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/200x200?text=No+Image' ?>" 
-                             alt="<?= htmlspecialchars($product['name']) ?>" 
-                             class="img-fluid product-image mb-3 mx-auto d-block">
-                        <h5><?= htmlspecialchars($product['name']) ?></h5>
-                        <p class="product-price">€<?= number_format($product['price'], 2) ?></p>
-                        <p class="small text-muted"><?= htmlspecialchars(substr($product['description'], 0, 80)) . (strlen($product['description']) > 80 ? '...' : '') ?></p>
-                        
-                        <div class="d-flex justify-content-between align-items-center mt-3">
-                            <div>
-                                <?php if ($product['in_stock'] > 0): ?>
-                                <span class="in-stock small">In Stock</span>
-                                <?php else: ?>
-                                <span class="out-of-stock small">Out of Stock</span>
-                                <?php endif; ?>
-                            </div>
-                            <a href="product.php?id=<?= $product['id'] ?>" class="btn btn-primary btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-            
-            <?php if (!$found_products): ?>
+            <?php if (empty($products)): ?>
                 <div class="col-12 text-center py-5">
                     <div class="alert alert-info">
                         <i class="bi bi-search" style="font-size: 2rem;"></i>
@@ -219,6 +148,30 @@ $search_term = isset($_GET['search']) ? trim($_GET['search']) : '';
                         <a href="products.php" class="btn btn-outline-primary mt-2">View all products</a>
                     </div>
                 </div>
+            <?php else: ?>
+                <?php foreach($products as $product): ?>
+                    <div class="col-md-4 mb-4">
+                        <div class="product-card h-100">
+                            <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/200x200?text=No+Image' ?>" 
+                                 alt="<?= htmlspecialchars($product['product_name']) ?>" 
+                                 class="img-fluid product-image mb-3 mx-auto d-block">
+                            <h5><?= htmlspecialchars($product['product_name']) ?></h5>
+                            <p class="product-price">€<?= number_format($product['price'], 2) ?></p>
+                            <p class="small text-muted"><?= htmlspecialchars(substr($product['description'], 0, 80)) . (strlen($product['description']) > 80 ? '...' : '') ?></p>
+                            
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <?php if ($product['in_stock'] > 0): ?>
+                                    <span class="in-stock small">In Stock</span>
+                                    <?php else: ?>
+                                    <span class="out-of-stock small">Out of Stock</span>
+                                    <?php endif; ?>
+                                </div>
+                                <a href="product.php?id=<?= $product['id'] ?>" class="btn btn-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             <?php endif; ?>
         </div>
     </div>

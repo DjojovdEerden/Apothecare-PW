@@ -4,51 +4,20 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-// Sample product data (simulate database)
-$products = [
-    1 => [
-        'id' => 1,
-        'name' => 'Vitamin C 1000mg',
-        'price' => 15.99,
-        'description' => 'High-strength vitamin C supplement that supports immune function.',
-        'image_url' => 'images/products/vitamin-c.jpg',
-        'category' => 'Supplements',
-        'in_stock' => 25
-    ],
-    2 => [
-        'id' => 2,
-        'name' => 'Omega-3 Fish Oil',
-        'price' => 19.99,
-        'description' => 'Pure fish oil supplement rich in omega-3 fatty acids for heart health.',
-        'image_url' => 'images/products/omega-3.jpg',
-        'category' => 'Supplements',
-        'in_stock' => 15
-    ],
-    3 => [
-        'id' => 3,
-        'name' => 'Hydrating Face Cream',
-        'price' => 24.99,
-        'description' => 'Rich, nourishing face cream that hydrates and soothes dry skin.',
-        'image_url' => 'images/products/face-cream.jpg',
-        'category' => 'Skincare',
-        'in_stock' => 8
-    ],
-    4 => [
-        'id' => 4,
-        'name' => 'First Aid Kit',
-        'price' => 29.99,
-        'description' => 'Complete first aid kit for home emergencies.',
-        'image_url' => 'images/products/first-aid.jpg',
-        'category' => 'Medical Supplies',
-        'in_stock' => 12
-    ]
-];
+// Include database configuration and functions
+require_once 'connection/db_config.php';
 
 // Get product ID from URL
 $product_id = isset($_GET['id']) ? (int)$_GET['id'] : 1;
 
-// Get current product
-$product = isset($products[$product_id]) ? $products[$product_id] : $products[1];
+// Get current product from database
+$product = get_product($product_id);
+
+// If product not found, redirect to products page
+if (!$product) {
+    header('Location: products.php');
+    exit;
+}
 
 // Handle Add to Cart
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
@@ -70,15 +39,58 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_cart'])) {
 }
 
 // Find related products
-$related_products = [];
-foreach ($products as $p) {
-    if ($p['id'] != $product_id && $p['category'] == $product['category']) {
-        $related_products[] = $p;
+$related_products = get_related_products($product_id, $product['category_id']);
+
+// Include the reviews system (Using database functions instead of session storage)
+// Handle form submissions for reviews
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Handle new review submission
+    if (isset($_POST['submit_review'])) {
+        $author = isset($_POST['author']) ? trim($_POST['author']) : '';
+        $rating = isset($_POST['rating']) ? (int)$_POST['rating'] : 5;
+        $comment = isset($_POST['comment']) ? trim($_POST['comment']) : '';
+        
+        // Simple validation
+        $errors = [];
+        if (empty($author)) {
+            $errors[] = 'Please enter your name';
+        }
+        if (empty($comment)) {
+            $errors[] = 'Please enter a comment';
+        }
+        if ($rating < 1 || $rating > 5) {
+            $errors[] = 'Please select a valid rating';
+        }
+        
+        if (empty($errors)) {
+            add_review($product_id, $author, $rating, $comment);
+            $success_message = 'Your review has been submitted successfully!';
+        }
+    }
+    
+    // Handle marking a review as helpful
+    if (isset($_POST['mark_helpful'])) {
+        $review_id = isset($_POST['review_id']) ? (int)$_POST['review_id'] : 0;
+        if ($review_id > 0) {
+            mark_review_helpful($review_id);
+            
+            // Remember which reviews the user has marked as helpful
+            if (!isset($_SESSION['helpful_reviews'])) {
+                $_SESSION['helpful_reviews'] = [];
+            }
+            $_SESSION['helpful_reviews'][] = $review_id;
+        }
     }
 }
 
-// Include the reviews system
-include('reviews.php');
+// Check if user has already marked a review as helpful
+function user_marked_helpful($review_id) {
+    return isset($_SESSION['helpful_reviews']) && in_array($review_id, $_SESSION['helpful_reviews']);
+}
+
+// Get reviews for this product
+$reviews = get_product_reviews($product_id);
+$avg_rating = get_average_rating($product_id);
 ?>
 
 <!DOCTYPE html>
@@ -86,7 +98,7 @@ include('reviews.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($product['name']) ?> - Apothecare</title>
+    <title><?= htmlspecialchars($product['product_name']) ?> - Apothecare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
@@ -144,11 +156,11 @@ include('reviews.php');
         <div class="row">
             <div class="col-md-6 mb-4">
                 <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/400x400?text=No+Image' ?>" 
-                     alt="<?= htmlspecialchars($product['name']) ?>" 
+                     alt="<?= htmlspecialchars($product['product_name']) ?>" 
                      class="img-fluid product-image border p-2">
             </div>
             <div class="col-md-6">
-                <h1><?= htmlspecialchars($product['name']) ?></h1>
+                <h1><?= htmlspecialchars($product['product_name']) ?></h1>
                 <p class="product-price">€<?= number_format($product['price'], 2) ?></p>
                 
                 <div class="mb-3">
@@ -189,13 +201,129 @@ include('reviews.php');
                 <hr>
                 <h2>Product Reviews</h2>
                 
-                <?php 
-                    // Display the review form first
-                    render_review_form($product_id);
+                <!-- Review Form -->
+                <div class="review-form-container mt-4 p-4 bg-light rounded mb-5">
+                    <h3>Write a Review</h3>
                     
-                    // Then display reviews for this product
-                    render_reviews_list($product_id);
-                ?>
+                    <?php if (!empty($errors)): ?>
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                <?php foreach ($errors as $error): ?>
+                                    <li><?= htmlspecialchars($error) ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <?php if (isset($success_message)): ?>
+                        <div class="alert alert-success">
+                            <?= htmlspecialchars($success_message) ?>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <form action="product.php?id=<?= $product_id ?>" method="post">
+                        <div class="mb-3">
+                            <label for="author" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="author" name="author" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Rating</label>
+                            <div class="rating-select">
+                                <div class="btn-group" role="group">
+                                    <?php for ($i = 1; $i <= 5; $i++): ?>
+                                        <input type="radio" class="btn-check" name="rating" id="rating<?= $i ?>" value="<?= $i ?>" <?= $i == 5 ? 'checked' : '' ?>>
+                                        <label class="btn btn-outline-warning" for="rating<?= $i ?>">
+                                            <?= $i ?> <i class="bi bi-star-fill"></i>
+                                        </label>
+                                    <?php endfor; ?>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Your Review</label>
+                            <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" name="submit_review" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+                
+                <!-- Reviews List -->
+                <div class="reviews-container">
+                    <?php if (!empty($reviews)): ?>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h3>Customer Feedback</h3>
+                            <div class="d-flex align-items-center">
+                                <span class="h4 mb-0 me-2"><?= $avg_rating ?></span>
+                                <div class="star-rating">
+                                    <?php 
+                                    // Render stars based on average rating
+                                    for ($i = 1; $i <= 5; $i++) {
+                                        if ($i <= floor($avg_rating)) {
+                                            echo '<i class="bi bi-star-fill text-warning"></i>';
+                                        } elseif ($i - 0.5 <= $avg_rating) {
+                                            echo '<i class="bi bi-star-half text-warning"></i>';
+                                        } else {
+                                            echo '<i class="bi bi-star text-warning"></i>';
+                                        }
+                                    }
+                                    ?>
+                                </div>
+                                <span class="text-muted ms-2">(<?= count($reviews) ?> reviews)</span>
+                            </div>
+                        </div>
+                    <?php else: ?>
+                        <h3 class="mb-3">Customer Feedback</h3>
+                    <?php endif; ?>
+                    
+                    <?php if (empty($reviews)): ?>
+                        <div class="alert alert-info">
+                            There are no reviews yet. Be the first to review this product!
+                        </div>
+                    <?php else: ?>
+                        <?php foreach ($reviews as $review): ?>
+                            <div class="card mb-3 review-card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <div>
+                                            <h5 class="card-title mb-0"><?= htmlspecialchars($review['author']) ?></h5>
+                                            <div class="text-muted small">
+                                                <?= date('F j, Y', strtotime($review['created_at'])) ?>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="star-rating">
+                                                <?php for ($i = 1; $i <= 5; $i++): ?>
+                                                    <?php if ($i <= $review['rating']): ?>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                    <?php else: ?>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                    <?php endif; ?>
+                                                <?php endfor; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="card-text mt-3"><?= nl2br(htmlspecialchars($review['comment'])) ?></p>
+                                    
+                                    <div class="d-flex align-items-center mt-3">
+                                        <form action="product.php?id=<?= $product_id ?>" method="post" class="me-3">
+                                            <input type="hidden" name="review_id" value="<?= $review['id'] ?>">
+                                            <button type="submit" name="mark_helpful" class="btn btn-sm btn-outline-secondary <?= user_marked_helpful($review['id']) ? 'disabled' : '' ?>">
+                                                <i class="bi bi-hand-thumbs-up"></i> Helpful
+                                                <?php if ($review['helpful_count'] > 0): ?>
+                                                    <span class="ms-1">(<?= $review['helpful_count'] ?>)</span>
+                                                <?php endif; ?>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
 
@@ -208,9 +336,9 @@ include('reviews.php');
                 <div class="col-md-4">
                     <div class="product-card text-center">
                         <img src="<?= $related['image_url'] ?? 'https://via.placeholder.com/200x200?text=No+Image' ?>" 
-                             alt="<?= htmlspecialchars($related['name']) ?>" 
+                             alt="<?= htmlspecialchars($related['product_name']) ?>" 
                              class="img-fluid mb-3" style="height: 150px; object-fit: contain;">
-                        <h5><?= htmlspecialchars($related['name']) ?></h5>
+                        <h5><?= htmlspecialchars($related['product_name']) ?></h5>
                         <p class="fw-bold">€<?= number_format($related['price'], 2) ?></p>
                         <a href="product.php?id=<?= $related['id'] ?>" class="btn btn-outline-primary">View Details</a>
                     </div>
