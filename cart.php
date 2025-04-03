@@ -4,45 +4,8 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-// Sample product data (same as in other files)
-$products = [
-    1 => [
-        'id' => 1,
-        'name' => 'Vitamin C 1000mg',
-        'price' => 15.99,
-        'description' => 'High-strength vitamin C supplement that supports immune function.',
-        'image_url' => 'images/products/vitamin-c.jpg',
-        'category' => 'Supplements',
-        'in_stock' => 25
-    ],
-    2 => [
-        'id' => 2,
-        'name' => 'Omega-3 Fish Oil',
-        'price' => 19.99,
-        'description' => 'Pure fish oil supplement rich in omega-3 fatty acids for heart health.',
-        'image_url' => 'images/products/omega-3.jpg',
-        'category' => 'Supplements',
-        'in_stock' => 15
-    ],
-    3 => [
-        'id' => 3,
-        'name' => 'Hydrating Face Cream',
-        'price' => 24.99,
-        'description' => 'Rich, nourishing face cream that hydrates and soothes dry skin.',
-        'image_url' => 'images/products/face-cream.jpg',
-        'category' => 'Skincare',
-        'in_stock' => 8
-    ],
-    4 => [
-        'id' => 4,
-        'name' => 'First Aid Kit',
-        'price' => 29.99,
-        'description' => 'Complete first aid kit for home emergencies.',
-        'image_url' => 'images/products/first-aid.jpg',
-        'category' => 'Medical Supplies',
-        'in_stock' => 12
-    ]
-];
+// Include database configuration and functions
+require_once 'connection/db_config.php';
 
 // Initialize cart if needed
 if (!isset($_SESSION['cart'])) {
@@ -78,13 +41,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Calculate cart totals
+// Get products in cart from database
+$cart_items = [];
 $subtotal = 0;
 $total_items = 0;
 
 foreach ($_SESSION['cart'] as $id => $quantity) {
-    if (isset($products[$id])) {
-        $subtotal += $products[$id]['price'] * $quantity;
+    $product = get_product($id);
+    if ($product) {
+        $cart_items[] = [
+            'product' => $product,
+            'quantity' => $quantity,
+            'total' => $product['price'] * $quantity
+        ];
+        $subtotal += $product['price'] * $quantity;
         $total_items += $quantity;
     }
 }
@@ -128,7 +98,7 @@ $total = $subtotal + $shipping + $tax;
                     <a href="cart.php" class="btn btn-outline-light active">
                         Cart
                         <?php if (!empty($_SESSION['cart'])): ?>
-                        <span class="badge bg-danger"><?= array_sum($_SESSION['cart']) ?></span>a
+                        <span class="badge bg-danger"><?= array_sum($_SESSION['cart']) ?></span>
                         <?php endif; ?>
                     </a>
                 </div>
@@ -161,7 +131,7 @@ $total = $subtotal + $shipping + $tax;
             </div>
         <?php endif; ?>
         
-        <?php if (empty($_SESSION['cart'])): ?>
+        <?php if (empty($cart_items)): ?>
             <div class="alert alert-info">
                 <i class="bi bi-cart-x" style="font-size: 2rem;"></i>
                 <p class="mt-3">Your shopping cart is empty.</p>
@@ -194,27 +164,25 @@ $total = $subtotal + $shipping + $tax;
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach($_SESSION['cart'] as $id => $quantity): ?>
-                                            <?php if (!isset($products[$id])) continue; ?>
-                                            <?php $product = $products[$id]; ?>
+                                        <?php foreach($cart_items as $item): ?>
                                             <tr>
                                                 <td>
-                                                    <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/80x80?text=No+Image' ?>" 
-                                                         alt="<?= htmlspecialchars($product['name']) ?>" 
+                                                    <img src="<?= $item['product']['image_url'] ?? 'https://via.placeholder.com/80x80?text=No+Image' ?>" 
+                                                         alt="<?= htmlspecialchars($item['product']['product_name']) ?>" 
                                                          class="cart-item-img border">
                                                 </td>
                                                 <td>
-                                                    <a href="product.php?id=<?= $id ?>" class="text-decoration-none">
-                                                        <?= htmlspecialchars($product['name']) ?>
+                                                    <a href="product.php?id=<?= $item['product']['id'] ?>" class="text-decoration-none">
+                                                        <?= htmlspecialchars($item['product']['product_name']) ?>
                                                     </a>
                                                 </td>
-                                                <td>€<?= number_format($product['price'], 2) ?></td>
+                                                <td>€<?= number_format($item['product']['price'], 2) ?></td>
                                                 <td>
                                                     <form action="" method="post" class="quantity-form">
-                                                        <input type="hidden" name="update_id" value="<?= $id ?>">
+                                                        <input type="hidden" name="update_id" value="<?= $item['product']['id'] ?>">
                                                         <div class="input-group" style="width: 100px">
-                                                            <input type="number" name="quantity" value="<?= $quantity ?>" 
-                                                                   min="1" max="<?= min($product['in_stock'], 10) ?>" 
+                                                            <input type="number" name="quantity" value="<?= $item['quantity'] ?>" 
+                                                                   min="1" max="<?= min($item['product']['in_stock'], 10) ?>" 
                                                                    class="form-control form-control-sm">
                                                             <button type="submit" name="update_quantity" class="btn btn-sm btn-outline-secondary">
                                                                 <i class="bi bi-arrow-repeat"></i>
@@ -222,10 +190,10 @@ $total = $subtotal + $shipping + $tax;
                                                         </div>
                                                     </form>
                                                 </td>
-                                                <td>€<?= number_format($product['price'] * $quantity, 2) ?></td>
+                                                <td>€<?= number_format($item['total'], 2) ?></td>
                                                 <td>
                                                     <form action="" method="post" onsubmit="return confirm('Remove this item from cart?')">
-                                                        <input type="hidden" name="remove_id" value="<?= $id ?>">
+                                                        <input type="hidden" name="remove_id" value="<?= $item['product']['id'] ?>">
                                                         <button type="submit" name="remove_item" class="btn btn-sm btn-outline-danger">
                                                             <i class="bi bi-trash"></i>
                                                         </button>
