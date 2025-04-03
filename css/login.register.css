@@ -37,14 +37,14 @@
     margin-right: 18%;
 }
 
-#btnRegisterLogin {
-    width: 20%;
+.container #btnRegisterLogin {
+    width: 140px;
     background-color: blue;
     border-radius: 7px;
     color: white;
     border: none;
     text-align: center;
-    ;
+    
 }
 
 .button-textalign {
