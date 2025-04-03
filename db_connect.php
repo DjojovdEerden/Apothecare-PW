@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "apotheek";
+$database = "apothecare";
 
 // Verbinding maken met de database
 $conn = new mysqli($servername, $username, $password, $database);
