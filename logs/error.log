@@ -1,0 +1,742 @@
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 28
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 32
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:19:48 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 28
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 32
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:19:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 28
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 32
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:19:54 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 12:19:58 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 12:19:58 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 12:19:58 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 28
+[04-Apr-2025 12:19:58 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 32
+[04-Apr-2025 12:20:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 12:20:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 12:20:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 28
+[04-Apr-2025 12:20:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 32
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 28
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 32
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 12:20:12 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:30 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:32 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:34 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:39 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:45 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:06:52 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:07:07 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Deprecated:  round(): Passing null to parameter #1 ($num) of type int|float is deprecated in C:\xampp\htdocs\test\models\Review.php on line 57
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $added_to_cart in C:\xampp\htdocs\test\product.php on line 71
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $review_added in C:\xampp\htdocs\test\product.php on line 77
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $helpful_marked in C:\xampp\htdocs\test\product.php on line 83
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:07:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Deprecated:  round(): Passing null to parameter #1 ($num) of type int|float is deprecated in C:\xampp\htdocs\test\models\Review.php on line 57
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $added_to_cart in C:\xampp\htdocs\test\product.php on line 71
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $review_added in C:\xampp\htdocs\test\product.php on line 77
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $helpful_marked in C:\xampp\htdocs\test\product.php on line 83
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:07:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $added_to_cart in C:\xampp\htdocs\test\product.php on line 71
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $review_added in C:\xampp\htdocs\test\product.php on line 77
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $helpful_marked in C:\xampp\htdocs\test\product.php on line 83
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:07:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 88
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 112
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 125
+[04-Apr-2025 13:10:56 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 146
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 29
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $added_to_cart in C:\xampp\htdocs\test\product.php on line 71
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $review_added in C:\xampp\htdocs\test\product.php on line 77
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $helpful_marked in C:\xampp\htdocs\test\product.php on line 83
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 98
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 102
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\test\product.php on line 103
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 106
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\product.php on line 115
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Undefined variable $product in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:11:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\test\product.php on line 118
+[04-Apr-2025 13:11:45 Europe/Berlin] PHP Warning:  require(C:\xampp\htdocs\test/views/products/index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\test\controllers\ProductController.php on line 37
+[04-Apr-2025 13:11:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\test/views/products/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\test\controllers\ProductController.php:37
+Stack trace:
+#0 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#1 {main}
+  thrown in C:\xampp\htdocs\test\controllers\ProductController.php on line 37
+[04-Apr-2025 13:11:51 Europe/Berlin] PHP Warning:  require(C:\xampp\htdocs\test/views/products/index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\test\controllers\ProductController.php on line 37
+[04-Apr-2025 13:11:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\test/views/products/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\test\controllers\ProductController.php:37
+Stack trace:
+#0 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#1 {main}
+  thrown in C:\xampp\htdocs\test\controllers\ProductController.php on line 37
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 87
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\products.php on line 87
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 111
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 111
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 124
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $filter_category in C:\xampp\htdocs\test\products.php on line 124
+[04-Apr-2025 13:12:08 Europe/Berlin] PHP Warning:  Undefined variable $search_term in C:\xampp\htdocs\test\products.php on line 145
+[04-Apr-2025 13:15:32 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:15:32 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:15:32 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:15:36 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:15:36 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:15:36 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:15:41 Europe/Berlin] PHP Deprecated:  round(): Passing null to parameter #1 ($num) of type int|float is deprecated in C:\xampp\htdocs\test\models\Review.php on line 57
+[04-Apr-2025 13:15:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:15:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:15:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:15:48 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:15:48 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:15:48 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Deprecated:  round(): Passing null to parameter #1 ($num) of type int|float is deprecated in C:\xampp\htdocs\test\models\Review.php on line 57
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 202
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 204
+[04-Apr-2025 13:15:51 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 13:15:56 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:15:56 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:15:56 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:18:28 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:18:28 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:18:28 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:18:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:18:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:18:30 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:18:31 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:18:31 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:18:31 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:18:34 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:18:34 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:18:34 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:31:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:31:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:31:25 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:31:25 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:31:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:31:26 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:31:26 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:31:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\view.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(79): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\product.php(22): ProductController->view(3)
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:31:27 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:31:27 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:31:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:40:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:40:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:40:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:40:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:41:36 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:41:36 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:41:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:41:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:41:49 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:41:49 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:41:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:41:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:41:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:41:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:41:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:42:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:42:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:43:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:43:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:43:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:43:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:43:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:43:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:43:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:43:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\home\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\index.php(20): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:43:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:43:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:43:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Helpers::isLoggedIn() in C:\xampp\htdocs\test\views\components\header.php:29
+Stack trace:
+#0 C:\xampp\htdocs\test\views\products\index.php(1): require_once()
+#1 C:\xampp\htdocs\test\controllers\ProductController.php(37): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\test\products.php(15): ProductController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\test\views\components\header.php on line 29
+[04-Apr-2025 13:43:47 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:43:47 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:43:47 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 13:43:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:43:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:43:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 13:44:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:44:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:44:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 13:49:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:49:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:49:55 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:49:55 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:50:21 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:50:21 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:50:21 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:50:21 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:50:22 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:50:22 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:50:22 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:50:22 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:50:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:50:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:50:30 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:50:30 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:50:31 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:50:31 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:50:31 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:50:31 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:50:32 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:50:32 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:50:32 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:50:32 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:34 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:55:34 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:55:34 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:55:34 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:45 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:55:45 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:55:45 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:55:45 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:45 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:55:45 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:55:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:55:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:55:48 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:55:48 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:48 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:55:48 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:55:50 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:55:50 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:55:50 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:55:50 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:50 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:55:50 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:55:51 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:55:51 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:55:51 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:55:51 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:51 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:55:51 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:55:56 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:55:56 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:55:56 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:55:56 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:56 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:55:56 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:55:58 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:55:58 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:55:58 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:55:58 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:55:58 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:55:58 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:56:37 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:56:37 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:56:37 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:56:37 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:56:37 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:56:38 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:56:38 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 13:56:38 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 13:56:38 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 13:56:38 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 13:58:44 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 13:58:44 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 13:58:44 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:00:20 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 14:00:20 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 14:00:20 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 14:00:20 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 14:00:20 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 14:00:20 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 14:00:21 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 14:00:21 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 14:00:21 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 14:00:21 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 14:00:21 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 14:00:21 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 14:00:22 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 33
+[04-Apr-2025 14:00:22 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 34
+[04-Apr-2025 14:00:22 Europe/Berlin] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\xampp\htdocs\test\config\config.php on line 35
+[04-Apr-2025 14:00:22 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\test\config\config.php on line 36
+[04-Apr-2025 14:00:22 Europe/Berlin] Query Error: SQLSTATE[HY093]: Invalid parameter number - SQL: SELECT id, username, email, password, created_at FROM users 
+                   WHERE username = :identifier OR email = :identifier
+[04-Apr-2025 14:00:22 Europe/Berlin] Error fetching user by username or email: Database query failed. Please try again later.
+[04-Apr-2025 14:08:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:08:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:08:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:00 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:04 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:04 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:04 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:05 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:05 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:05 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:09 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:09 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:09 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:09 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:09 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:09 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:10 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:10 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:10 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:13 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:13 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:13 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:14 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:14 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:14 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:15 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:15 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:15 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:17 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:17 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:17 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:18 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:18 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:18 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:19 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:19 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:19 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:22 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:22 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:22 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:37 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:37 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:37 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:38 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:38 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:38 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:40 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:40 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:40 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:09:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:09:50 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 44
+[04-Apr-2025 14:09:50 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 202
+[04-Apr-2025 14:09:50 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 14:09:50 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 204
+[04-Apr-2025 14:09:50 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 14:10:33 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:10:33 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:10:33 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:10:33 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 202
+[04-Apr-2025 14:10:33 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 14:10:33 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 204
+[04-Apr-2025 14:10:33 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 202
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 204
+[04-Apr-2025 14:10:41 Europe/Berlin] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\test\utils\Helpers.php on line 48
+[04-Apr-2025 14:10:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:10:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:10:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:10:43 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:10:54 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:10:54 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:10:54 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:12:38 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:12:38 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:12:38 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:12:38 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:13:59 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:13:59 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:13:59 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:13:59 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:01 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:03 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:03 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:03 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:03 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:04 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:04 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:04 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:04 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:05 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:05 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:05 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:05 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:06 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:06 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:06 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:06 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:07 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:12 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:14:14 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 22
+[04-Apr-2025 14:14:14 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 25
+[04-Apr-2025 14:14:14 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 35
+[04-Apr-2025 14:14:14 Europe/Berlin] PHP Warning:  Undefined variable $current_page in C:\xampp\htdocs\test\views\components\header.php on line 49
+[04-Apr-2025 14:17:42 Europe/Berlin] Adding product to cart: Product ID=3, Quantity=1
+[04-Apr-2025 14:17:42 Europe/Berlin] Cart::addItem called with product_id=3, quantity=1
+[04-Apr-2025 14:17:42 Europe/Berlin] Added new item to cart: Product ID 3, quantity: 1
+[04-Apr-2025 14:17:42 Europe/Berlin] Cart now contains: {"3":1}
+[04-Apr-2025 14:17:42 Europe/Berlin] Add to cart success: true
+[04-Apr-2025 14:17:42 Europe/Berlin] Cart contents after adding: {"3":1}
+[04-Apr-2025 14:17:43 Europe/Berlin] Adding product to cart: Product ID=3, Quantity=1
+[04-Apr-2025 14:17:43 Europe/Berlin] Cart::addItem called with product_id=3, quantity=1
+[04-Apr-2025 14:17:43 Europe/Berlin] Updated existing cart item: Product ID 3, new quantity: 2
+[04-Apr-2025 14:17:43 Europe/Berlin] Cart now contains: {"3":2}
+[04-Apr-2025 14:17:43 Europe/Berlin] Add to cart success: true
+[04-Apr-2025 14:17:43 Europe/Berlin] Cart contents after adding: {"3":2}
+[04-Apr-2025 14:17:43 Europe/Berlin] Adding product to cart: Product ID=3, Quantity=1
+[04-Apr-2025 14:17:43 Europe/Berlin] Cart::addItem called with product_id=3, quantity=1
+[04-Apr-2025 14:17:43 Europe/Berlin] Updated existing cart item: Product ID 3, new quantity: 3
+[04-Apr-2025 14:17:43 Europe/Berlin] Cart now contains: {"3":3}
+[04-Apr-2025 14:17:43 Europe/Berlin] Add to cart success: true
+[04-Apr-2025 14:17:43 Europe/Berlin] Cart contents after adding: {"3":3}
+[04-Apr-2025 14:17:47 Europe/Berlin] Initializing empty cart in session
