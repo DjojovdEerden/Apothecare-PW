@@ -9,7 +9,7 @@
                 <a href="<?= APP_URL ?>/products.php" class="btn btn-primary btn-lg">Shop Now</a>
             </div>
             <div class="col-md-6 text-center">
-                <img src="<?= APP_URL ?>/assets/images/apotheek.png" alt="Pharmacy" class="img-fluid rounded shadow" 
+                <img src="<?= APP_URL ?>/assets/img/apotheek.png" alt="Apotheek" class="img-fluid rounded shadow" 
                      style="max-height: 400px;">
             </div>
         </div>
