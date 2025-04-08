@@ -479,3 +479,232 @@ footer {
     background: #c1c1c1;
 }
 
+/* AI Chatbot Styles */
+.ai-chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ai-chatbot-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.ai-chatbot-icon:hover {
+    transform: scale(1.1);
+}
+
+.ai-chatbot-icon i {
+    font-size: 28px;
+    color: white;
+}
+
+.ai-chatbot-window {
+    position: fixed; /* Change from absolute to fixed to ensure it stays in view while dragging */
+    bottom: 80px;
+    right: 0;
+    width: 350px;
+    height: 450px;
+    min-width: 250px;  /* Minimum width to maintain usability */
+    min-height: 300px; /* Minimum height to maintain usability */
+    max-width: 90vw;   /* Maximum width for smaller screens */
+    max-height: 80vh;  /* Maximum height for smaller screens */
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1010; /* Increase z-index to ensure it stays on top */
+}
+
+.ai-chatbot-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move; /* Change cursor to indicate draggability */
+    user-select: none; /* Prevent text selection which can interfere with dragging */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.ai-chatbot-window.dragging {
+    transition: none !important; /* Ensure no transition during drag for better performance */
+    user-select: none;
+    opacity: 0.95; /* Slightly transparent while dragging for visual feedback */
+    pointer-events: auto !important; /* Make sure it can receive events */
+}
+
+.ai-chatbot-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.ai-chatbot-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.ai-chatbot-controls button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition: background 0.2s;
+}
+
+.ai-chatbot-controls button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.ai-chatbot-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 150px; /* Ensure there's room for at least a few messages */
+}
+
+.ai-message, .user-message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.ai-message {
+    align-self: flex-start;
+    background-color: #f0f2f5;
+    color: #333;
+    border-bottom-left-radius: 5px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+.ai-chatbot-footer {
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ai-chatbot-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+    resize: none;
+    outline: none;
+    max-height: 100px;
+    min-height: 24px;
+}
+
+/* Resize handle */
+.ai-chatbot-resize-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: nwse-resize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    z-index: 1020;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.ai-chatbot-resize-handle:hover {
+    color: var(--primary-color);
+}
+
+.ai-chatbot-resize-handle i {
+    transform: rotate(90deg);
+}
+
+/* Add a class for when the window is being resized */
+.ai-chatbot-window.resizing {
+    transition: none;
+    user-select: none;
+}
+
+.ai-chatbot-send {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ai-chatbot-send:hover {
+    background-color: var(--primary-dark);
+}
+
+.ai-chatbot-send i {
+    font-size: 16px;
+}
+
+/* Make chatbot responsive */
+@media (max-width: 480px) {
+    .ai-chatbot-window {
+        width: 300px;
+        right: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .ai-chatbot-window {
+        min-width: 200px;
+    }
+    
+    .ai-chatbot-title {
+        font-size: 14px;
+    }
+    
+    .ai-chatbot-controls button {
+        width: 24px;
+        height: 24px;
+    }
+}
+

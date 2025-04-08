@@ -43,5 +43,45 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= APP_URL ?>/assets/js/main.js"></script>
+    
+    <!-- AI Chatbot -->
+    <div id="ai-chatbot" class="ai-chatbot-container">
+        <div class="ai-chatbot-icon" id="chatbot-icon">
+            <i class="bi bi-chat-dots-fill"></i>
+        </div>
+        <div class="ai-chatbot-window" id="chatbot-window">
+            <div class="ai-chatbot-header">
+                <div class="ai-chatbot-title">AI Assistant</div>
+                <div class="ai-chatbot-controls">
+                    <button class="ai-chatbot-minimize" id="chatbot-minimize">
+                        <i class="bi bi-dash"></i>
+                    </button>
+                    <button class="ai-chatbot-close" id="chatbot-close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ai-chatbot-body" id="chatbot-messages">
+                <div class="ai-message">
+                    <div class="ai-message-content">
+                        Hello! How can I help you today?
+                    </div>
+                </div>
+            </div>
+            <div class="ai-chatbot-footer">
+                <textarea id="chatbot-input" placeholder="Type your message..." rows="1" class="ai-chatbot-input"></textarea>
+                <button id="chatbot-send" class="ai-chatbot-send">
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </div>
+            <!-- Add resize handle -->
+            <div id="chatbot-resize-handle" class="ai-chatbot-resize-handle">
+                <i class="bi bi-arrows-angle-expand"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Chatbot Script -->
+    <script src="<?= APP_URL ?>/assets/js/chatbot.js"></script>
 </body>
 </html>
