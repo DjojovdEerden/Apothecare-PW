@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 04 apr 2025 om 13:48
+-- Gegenereerd op: 08 apr 2025 om 14:14
 -- Serverversie: 10.4.32-MariaDB
--- PHP-versie: 8.2.12
+-- PHP-versie: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -66,10 +66,10 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `NAME`, `price`, `description`, `image_url`, `category_id`, `in_stock`, `created_at`, `updated_at`) VALUES
-(1, 'Vitamin C 1000mg', 15.99, 'High-strength vitamin C supplement that supports immune function.', 'images/products/vitamin-c.jpg', 1, 25, '2025-04-02 11:39:14', '2025-04-02 11:39:14'),
-(2, 'Omega-3 Fish Oil', 19.99, 'Pure fish oil supplement rich in omega-3 fatty acids for heart health.', 'images/products/omega-3.jpg', 1, 15, '2025-04-02 11:39:14', '2025-04-02 11:39:14'),
-(3, 'Hydrating Face Cream', 24.99, 'Rich, nourishing face cream that hydrates and soothes dry skin.', 'images/products/face-cream.jpg', 2, 8, '2025-04-02 11:39:14', '2025-04-02 11:39:14'),
-(4, 'First Aid Kit', 29.99, 'Complete first aid kit for home emergencies.', 'images/products/first-aid.jpg', 3, 12, '2025-04-02 11:39:14', '2025-04-02 11:39:14');
+(1, 'Vitamin C 1000mg', 15.99, 'High-strength vitamin C supplement that supports immune function.', 'assets/img/vitaminc.png', 1, 25, '2025-04-02 11:39:14', '2025-04-08 11:54:42'),
+(2, 'Omega-3 Fish Oil', 19.99, 'Pure fish oil supplement rich in omega-3 fatty acids for heart health.', 'assets/img/omega.jpg', 1, 15, '2025-04-02 11:39:14', '2025-04-08 11:59:00'),
+(3, 'Hydrating Face Cream', 24.99, 'Rich, nourishing face cream that hydrates and soothes dry skin.', 'assets/img/facecream.png', 2, 8, '2025-04-02 11:39:14', '2025-04-08 11:56:15'),
+(4, 'First Aid Kit', 29.99, 'Complete first aid kit for home emergencies.', 'assets/img/firstaid.png', 3, 12, '2025-04-02 11:39:14', '2025-04-08 11:57:03');
 
 -- --------------------------------------------------------
 
@@ -105,8 +105,17 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `description` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `created_at`, `description`) VALUES
+(1, 'test', 'test@test', '$2y$10$d.5qg1Egxz4WRioiAbBP0u.UxW92iiRHbkvyBFJpRnYc03bZuOAju', '2025-04-07 09:26:25', 'test account'),
+(4, 'projectbase', 'projectbase56@gmail.com', '$2y$10$L2RRi3CJmIZVbvuaFhEyfumcttOE/Ls1p3mQKWzi9GE6Y1LUEedeS', '2025-04-08 09:35:49', NULL);
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -167,7 +176,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Beperkingen voor geëxporteerde tabellen
