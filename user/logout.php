@@ -12,6 +12,8 @@ $_SESSION = array();
 // Destroy the session
 session_destroy();
 
-// Redirect to home page
-Helpers::redirect(APP_URL . '/index.php');
+// redirect URL to ensure it goes to the homepage
+$home_url = rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/') . '/index.php';
+header("Location: $home_url");
+exit;
 ?>

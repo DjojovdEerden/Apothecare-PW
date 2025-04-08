@@ -967,3 +967,4 @@ Stack trace:
 [08-Apr-2025 10:40:38 Europe/Berlin] Cart now contains: {"4":6}
 [08-Apr-2025 10:40:38 Europe/Berlin] Add to cart success: true
 [08-Apr-2025 10:40:38 Europe/Berlin] Cart contents after adding: {"4":6}
+[08-Apr-2025 13:17:20 Europe/Berlin] Initializing empty cart in session

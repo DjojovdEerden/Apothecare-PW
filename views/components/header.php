@@ -14,11 +14,11 @@
     <!-- Critical CSS Fallback for better loading experience -->
     <style>
         /* Basic styles if CSS fails to load */
-        .navbar { background-color: #2c3e50; color: white; }
-        .product-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; }
-        .product-price { font-size: 1.2rem; color: #27ae60; font-weight: bold; }
-        .product-image { max-height: 200px; object-fit: contain; }
-        .in-stock { color: #27ae60; }
+        .navbar { background: linear-gradient(135deg, #4361ee, #7209b7); color: white; }
+        .product-card { box-shadow: 0 10px 20px rgba(0,0,0,0.05); padding: 20px; margin-bottom: 30px; }
+        .product-price { font-size: 1.3rem; color: #4361ee; font-weight: 700; }
+        .product-image { height: 220px; object-fit: contain; }
+        .in-stock { color: #2ecc71; }
         .out-of-stock { color: #e74c3c; }
     </style>
     
@@ -40,17 +40,23 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark mb-4">
         <div class="container">
-            <a class="navbar-brand" href="<?= APP_URL ?>/index.php"><?= APP_NAME ?></a>
+            <a class="navbar-brand" href="<?= APP_URL ?>/index.php">
+                <i class="bi bi-plus-circle me-2"></i><?= APP_NAME ?>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link <?= isset($current_page) && $current_page === 'home' ? 'active' : '' ?>" href="<?= APP_URL ?>/index.php">Home</a>
+                        <a class="nav-link <?= isset($current_page) && $current_page === 'home' ? 'active' : '' ?>" href="<?= APP_URL ?>/index.php">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= isset($current_page) && $current_page === 'products' ? 'active' : '' ?>" href="<?= APP_URL ?>/products.php">Products</a>
+                        <a class="nav-link <?= isset($current_page) && $current_page === 'products' ? 'active' : '' ?>" href="<?= APP_URL ?>/products.php">
+                            <i class="bi bi-grid me-1"></i>Products
+                        </a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -75,27 +81,26 @@
                         </button>
                     <?php endif; ?>
                     
-                    <a href="<?= APP_URL ?>/cart.php" class="btn btn-outline-light <?= isset($current_page) && $current_page === 'cart' ? 'active' : '' ?>">
+                    <a href="<?= APP_URL ?>/cart.php" class="btn btn-outline-light position-relative <?= isset($current_page) && $current_page === 'cart' ? 'active' : '' ?>">
                         <i class="bi bi-cart"></i> Cart
                         <?php if (!empty($_SESSION['cart'])): ?>
-                        <span class="badge bg-danger"><?= array_sum($_SESSION['cart']) ?></span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            <?= array_sum($_SESSION['cart']) ?>
+                            <span class="visually-hidden">items in cart</span>
+                        </span>
                         <?php endif; ?>
                     </a>
-                    
-
                 </div>
             </div>
         </div>
     </nav>
 
-
-
     <!-- Login/Register Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login or Register</h5>
+                    <h5 class="modal-title" id="loginModalLabel">Welcome to <?= APP_NAME ?></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -107,23 +112,31 @@
                             <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-tab-pane" type="button" role="tab" aria-controls="register-tab-pane" aria-selected="false">Register</button>
                         </li>
                     </ul>
-                    <div class="tab-content pt-3" id="authTabsContent">
+                    <div class="tab-content pt-4" id="authTabsContent">
                         <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
                             <form id="loginForm" action="<?= APP_URL ?>/user/login.php" method="post">
                                 <div class="mb-3">
                                     <label for="loginIdentifier" class="form-label">Username or Email</label>
-                                    <input type="text" class="form-control" id="loginIdentifier" name="identifier" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="loginIdentifier" name="identifier" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="loginPassword" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="loginPassword" name="password" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="loginPassword" name="password" required>
+                                    </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="rememberMe" name="remember">
                                         <label class="form-check-label" for="rememberMe">Remember me</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Login</button>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-box-arrow-in-right me-1"></i> Login
+                                    </button>
                                 </div>
                                 <div id="loginMessage" class="mt-3"></div>
                             </form>
@@ -132,22 +145,36 @@
                             <form id="registerForm" action="<?= APP_URL ?>/user/register.php" method="post">
                                 <div class="mb-3">
                                     <label for="registerUsername" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="registerUsername" name="username" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person-plus"></i></span>
+                                        <input type="text" class="form-control" id="registerUsername" name="username" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="registerEmail" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="registerEmail" name="email" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="registerEmail" name="email" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="registerPassword" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="registerPassword" name="password" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="registerPassword" name="password" required>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="confirmPassword" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPassword" name="confirm_password" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
+                                        <input type="password" class="form-control" id="confirmPassword" name="confirm_password" required>
+                                    </div>
                                 </div>
                                 <div class="d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-primary">Register</button>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-person-plus-fill me-1"></i> Register
+                                    </button>
                                 </div>
                                 <div id="registerMessage" class="mt-3"></div>
                             </form>
@@ -158,5 +185,7 @@
         </div>
     </div>
 
+    <!-- Main content wrapper with animation -->
+    <main class="fade-in">
 </body>
 </html>

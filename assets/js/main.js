@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     });
     
+    // Add animation classes to elements
+    animateOnScroll();
+    
     // Handle quantity buttons in product detail page
     const quantityInput = document.getElementById('quantity');
     if (quantityInput) {
@@ -161,6 +164,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Animate elements when they come into view
+function animateOnScroll() {
+    const elements = document.querySelectorAll('.product-card, .review-card, .hero-section h1, .hero-section p, .hero-section .btn');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+    
+    elements.forEach(element => {
+        element.style.opacity = "0";
+        observer.observe(element);
+    });
+}
 
 // Check if critical resources are loaded
 function checkResources() {

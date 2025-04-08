@@ -87,7 +87,7 @@
                 <?php foreach($products as $product): ?>
                     <div class="col">
                         <div class="product-card h-100">
-                            <img src="<?= $product['image_url'] ?? APP_URL . '/assets/images/placeholder.jpg' ?>" 
+                            <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/200x200?text=No+Image' ?>" 
                                  alt="<?= Helpers::escape($product['product_name']) ?>" 
                                  class="img-fluid product-image mb-3 mx-auto d-block" loading="lazy">
                             <h5><?= Helpers::escape($product['product_name']) ?></h5>

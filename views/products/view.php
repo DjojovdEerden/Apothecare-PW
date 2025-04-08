@@ -28,7 +28,7 @@
 
         <div class="row">
             <div class="col-md-6 mb-4">
-                <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/400x400?text=No+Image' ?>" 
+                <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/350x350?text=No+Image' ?>" 
                      alt="<?= Helpers::escape($product['product_name']) ?>" 
                      class="img-fluid product-detail-image border p-2">
             </div>
