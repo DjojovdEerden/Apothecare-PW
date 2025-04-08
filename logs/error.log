@@ -955,3 +955,15 @@ Stack trace:
 [07-Apr-2025 11:25:26 Europe/Berlin] Error fetching user: Database query failed. Please try again later.
 [07-Apr-2025 11:40:36 Europe/Berlin] Initializing empty cart in session
 [07-Apr-2025 11:48:05 Europe/Berlin] Initializing empty cart in session
+[08-Apr-2025 10:40:35 Europe/Berlin] Adding product to cart: Product ID=4, Quantity=1
+[08-Apr-2025 10:40:35 Europe/Berlin] Cart::addItem called with product_id=4, quantity=1
+[08-Apr-2025 10:40:35 Europe/Berlin] Added new item to cart: Product ID 4, quantity: 1
+[08-Apr-2025 10:40:35 Europe/Berlin] Cart now contains: {"4":1}
+[08-Apr-2025 10:40:35 Europe/Berlin] Add to cart success: true
+[08-Apr-2025 10:40:35 Europe/Berlin] Cart contents after adding: {"4":1}
+[08-Apr-2025 10:40:38 Europe/Berlin] Adding product to cart: Product ID=4, Quantity=5
+[08-Apr-2025 10:40:38 Europe/Berlin] Cart::addItem called with product_id=4, quantity=5
+[08-Apr-2025 10:40:38 Europe/Berlin] Updated existing cart item: Product ID 4, new quantity: 6
+[08-Apr-2025 10:40:38 Europe/Berlin] Cart now contains: {"4":6}
+[08-Apr-2025 10:40:38 Europe/Berlin] Add to cart success: true
+[08-Apr-2025 10:40:38 Europe/Berlin] Cart contents after adding: {"4":6}

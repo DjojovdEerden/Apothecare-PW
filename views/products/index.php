@@ -8,16 +8,16 @@
         <div class="search-container">
             <form action="<?= APP_URL ?>/products.php" method="GET">
                 <div class="row g-3 align-items-center">
-                    <div class="col-md-6">
-                        <div class="input-group">
+                    <div class="col-12 col-md-6">
+                        <div class="input-group mb-2 mb-md-0">
                             <input type="text" name="search" class="form-control" placeholder="Search products..." 
                                 value="<?= Helpers::escape($search_term) ?>" aria-label="Search products">
                             <button class="btn btn-primary" type="submit">
-                                <i class="bi bi-search"></i> Search
+                                <i class="bi bi-search"></i><span class="d-none d-md-inline"> Search</span>
                             </button>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-8 col-md-4">
                         <select name="category" class="form-select" aria-label="Filter by category">
                             <option value="">All Categories</option>
                             <?php if (!empty($categories)): ?>
@@ -34,13 +34,15 @@
                             <?php endif; ?>
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-4 col-md-2">
                         <?php if ($search_term || $filter_category): ?>
                         <a href="<?= APP_URL ?>/products.php" class="btn btn-outline-secondary w-100">
-                            <i class="bi bi-x-circle"></i> Clear All
+                            <i class="bi bi-x-circle"></i><span class="d-none d-md-inline"> Clear</span>
                         </a>
                         <?php else: ?>
-                        <button type="submit" class="btn btn-outline-primary w-100">Apply</button>
+                        <button type="submit" class="btn btn-outline-primary w-100">
+                            <i class="bi bi-filter"></i><span class="d-none d-md-inline"> Apply</span>
+                        </button>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -62,7 +64,7 @@
         </div>
         <?php endif; ?>
 
-        <div class="row">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
             <?php if (empty($products)): ?>
                 <div class="col-12 text-center py-5">
                     <div class="alert alert-info">
@@ -83,11 +85,11 @@
                 </div>
             <?php else: ?>
                 <?php foreach($products as $product): ?>
-                    <div class="col-md-4 mb-4">
+                    <div class="col">
                         <div class="product-card h-100">
-                            <img src="<?= $product['image_url'] ?? 'https://via.placeholder.com/200x200?text=No+Image' ?>" 
+                            <img src="<?= $product['image_url'] ?? APP_URL . '/assets/images/placeholder.jpg' ?>" 
                                  alt="<?= Helpers::escape($product['product_name']) ?>" 
-                                 class="img-fluid product-image mb-3 mx-auto d-block">
+                                 class="img-fluid product-image mb-3 mx-auto d-block" loading="lazy">
                             <h5><?= Helpers::escape($product['product_name']) ?></h5>
                             <p class="product-price"><?= Helpers::formatPrice($product['price']) ?></p>
                             <p class="small text-muted"><?= Helpers::truncateText($product['description'], 80) ?></p>

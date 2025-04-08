@@ -1,7 +1,14 @@
 <?php
 // Application configuration
 define('APP_NAME', 'Apothecare');
-define('APP_URL', 'http://localhost/test');
+
+// Dynamic APP_URL detection (works across different environments)
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$domain = $_SERVER['HTTP_HOST'];
+$path = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
+$base_path = str_replace('/config', '', $path); // Remove '/config' if it's in the path
+define('APP_URL', $protocol . $domain . $base_path);
+
 define('APP_VERSION', '1.0.0');
 
 // Database configuration
@@ -10,7 +17,7 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'apothecare-pw');
 
-// Path definitions
+// Path definitions - use __DIR__ for more reliable paths
 define('BASE_PATH', dirname(__DIR__));
 define('VIEWS_PATH', BASE_PATH . '/views');
 define('MODELS_PATH', BASE_PATH . '/models');

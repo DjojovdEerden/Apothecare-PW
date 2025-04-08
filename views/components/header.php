@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= isset($page_title) ? Helpers::escape($page_title) . ' - ' : '' ?><?= APP_NAME ?></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap CSS with integrity check and fallback -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<?= APP_URL ?>/assets/css/style.css">
     
-    <!-- Removed Google Translate integration -->
+    <!-- Critical CSS Fallback for better loading experience -->
+    <style>
+        /* Basic styles if CSS fails to load */
+        .navbar { background-color: #2c3e50; color: white; }
+        .product-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; }
+        .product-price { font-size: 1.2rem; color: #27ae60; font-weight: bold; }
+        .product-image { max-height: 200px; object-fit: contain; }
+        .in-stock { color: #27ae60; }
+        .out-of-stock { color: #e74c3c; }
+    </style>
+    
+    <!-- Deferred JavaScript for resource checking -->
+    <script>
+        // Store base URL for JavaScript use
+        const APP_URL = "<?= APP_URL ?>";
+        
+        // Check resources loaded correctly
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'LINK' || e.target.tagName === 'SCRIPT') {
+                console.error('Resource failed to load:', e.target.src || e.target.href);
+                // You could add code here to display a warning to admins
+            }
+        }, true);
+    </script>
 </head>
 <body>
     <!-- Navigation -->

@@ -1,6 +1,18 @@
 // Main JavaScript for Apothecare
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Resource loading checks
+    checkResources();
+    
+    // Fix broken images
+    document.querySelectorAll('img').forEach(img => {
+        img.onerror = function() {
+            this.onerror = null;
+            this.src = APP_URL + '/assets/images/placeholder.jpg';
+            this.alt = 'Image not available';
+        };
+    });
+    
     // Handle quantity buttons in product detail page
     const quantityInput = document.getElementById('quantity');
     if (quantityInput) {
@@ -149,3 +161,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Check if critical resources are loaded
+function checkResources() {
+    // Check if Bootstrap is loaded
+    if (typeof bootstrap === 'undefined') {
+        console.error('Bootstrap JS failed to load. Loading fallback...');
+        loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js');
+    }
+    
+    // Check if main CSS loaded
+    const styleSheets = Array.from(document.styleSheets);
+    const mainCssLoaded = styleSheets.some(sheet => {
+        try {
+            return sheet.href && sheet.href.includes('style.css');
+        } catch (e) {
+            return false;
+        }
+    });
+    
+    if (!mainCssLoaded) {
+        console.error('Main CSS failed to load. Loading fallback...');
+        loadStyle(APP_URL + '/assets/css/style.css');
+    }
+}
+
+// Helper to load scripts
+function loadScript(src) {
+    const script = document.createElement('script');
+    script.src = src;
+    document.body.appendChild(script);
+}
+
+// Helper to load stylesheets
+function loadStyle(href) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    document.head.appendChild(link);
+}
