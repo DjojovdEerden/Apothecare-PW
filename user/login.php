@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Check if users table exists
                 $stmt = $conn->query("SHOW TABLES LIKE 'users'");
                 if ($stmt->rowCount() == 0) {
-                    throw new Exception("Users table does not exist. Please <a href='" . APP_URL . "/user/setup.php'>run the setup</a> first.");
+                    throw new Exception("Users table does not exist. Please import the database SQL file first.");
                 }
             } catch (Exception $e) {
                 throw new Exception("Database connection issue: " . $e->getMessage());

@@ -91,3 +91,25 @@
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
+/* Account page styles */
+.account-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 1rem auto;
+}
+
+.tab-pane {
+    padding: 1rem 0;
+}
+
+#description {
+    min-height: 120px;
+}
+

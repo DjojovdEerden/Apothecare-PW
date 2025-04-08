@@ -11,7 +11,8 @@ class User {
     // Get user by ID
     public function getUserById($id) {
         try {
-            $sql = "SELECT id, username, email, created_at FROM users WHERE id = :id";
+            // Since we know the description column exists now, we can simplify this
+            $sql = "SELECT id, username, email, description, created_at FROM users WHERE id = :id";
             return $this->db->fetchOne($sql, [':id' => $id]);
         } catch (Exception $e) {
             error_log('Error fetching user: ' . $e->getMessage());
@@ -38,7 +39,7 @@ class User {
                 $this->db->query("SELECT 1 FROM users LIMIT 1");
             } catch (Exception $tableError) {
                 error_log('Users table may not exist: ' . $tableError->getMessage());
-                throw new Exception('Users table does not exist. Please run the SQL setup script.');
+                throw new Exception('Users table does not exist. Please import the database SQL file first.');
             }
             
             // Fix: using different parameter names for username and email conditions
@@ -124,6 +125,12 @@ class User {
                 }
                 $updateFields[] = "email = :email";
                 $params[':email'] = $data['email'];
+            }
+            
+            // Simplified description update since we know the column exists
+            if (isset($data['description'])) {
+                $updateFields[] = "description = :description";
+                $params[':description'] = $data['description'];
             }
             
             if (empty($updateFields)) {

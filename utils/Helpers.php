@@ -45,6 +45,10 @@ class Helpers {
     
     // Sanitize output for HTML display
     public static function escape($text) {
+        // Handle null values
+        if ($text === null) {
+            return '';
+        }
         return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
     }
     

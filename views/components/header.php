@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="<?= APP_URL ?>/assets/css/style.css">
+    
+    <!-- Removed Google Translate integration -->
 </head>
 <body>
     <!-- Navigation -->
@@ -46,16 +48,21 @@
                             <i class="bi bi-person"></i> Login
                         </button>
                     <?php endif; ?>
+                    
                     <a href="<?= APP_URL ?>/cart.php" class="btn btn-outline-light <?= isset($current_page) && $current_page === 'cart' ? 'active' : '' ?>">
                         <i class="bi bi-cart"></i> Cart
                         <?php if (!empty($_SESSION['cart'])): ?>
                         <span class="badge bg-danger"><?= array_sum($_SESSION['cart']) ?></span>
                         <?php endif; ?>
                     </a>
+                    
+
                 </div>
             </div>
         </div>
     </nav>
+
+
 
     <!-- Login/Register Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -124,5 +131,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>

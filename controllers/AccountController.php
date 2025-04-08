@@ -20,16 +20,24 @@ class AccountController {
         $message = '';
         $messageType = '';
         
-        // Process updates if there's a POST request
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if (isset($_POST['update_profile'])) {
-                list($message, $messageType) = $this->updateProfile();
-            } elseif (isset($_POST['update_password'])) {
-                list($message, $messageType) = $this->updatePassword();
+        if (!$userData) {
+            // If we can't get user data, show error message
+            $message = 'Unable to retrieve your account information.';
+            $messageType = 'danger';
+        } else {
+            // Process updates if there's a POST request
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                if (isset($_POST['update_profile'])) {
+                    list($message, $messageType) = $this->updateProfile();
+                } elseif (isset($_POST['update_password'])) {
+                    list($message, $messageType) = $this->updatePassword();
+                } elseif (isset($_POST['update_description'])) {
+                    list($message, $messageType) = $this->updateDescription();
+                }
+                
+                // Get fresh user data after update
+                $userData = $this->user->getUserById($userId);
             }
-            
-            // Get fresh user data after update
-            $userData = $this->user->getUserById($userId);
         }
         
         // Load the view
@@ -67,6 +75,27 @@ class AccountController {
             $_SESSION['email'] = $email;
             
             return ['Profile updated successfully.', 'success'];
+        } catch (Exception $e) {
+            return [$e->getMessage(), 'danger'];
+        }
+    }
+    
+    // Handle description update form submission
+    public function updateDescription() {
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['update_description'])) {
+            return ['', ''];
+        }
+        
+        $userId = Helpers::getCurrentUserId();
+        $description = isset($_POST['description']) ? trim($_POST['description']) : '';
+        
+        try {
+            // Update user description
+            $this->user->updateUserInfo($userId, [
+                'description' => $description
+            ]);
+            
+            return ['Your information has been updated successfully.', 'success'];
         } catch (Exception $e) {
             return [$e->getMessage(), 'danger'];
         }
