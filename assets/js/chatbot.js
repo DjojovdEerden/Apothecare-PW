@@ -7,13 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Chat Elements
     const chatbotIcon = document.getElementById('chatbot-icon');
     const chatbotWindow = document.getElementById('chatbot-window');
-    const chatbotMinimize = document.getElementById('chatbot-minimize');
+    const chatbotMaximize = document.getElementById('chatbot-maximize');
     const chatbotClose = document.getElementById('chatbot-close');
     const chatbotInput = document.getElementById('chatbot-input');
     const chatbotSend = document.getElementById('chatbot-send');
     const chatbotMessages = document.getElementById('chatbot-messages');
     const chatbotHeader = document.querySelector('.ai-chatbot-header');
     const chatbotResizeHandle = document.getElementById('chatbot-resize-handle');
+    
+    // Store original dimensions to restore after maximize
+    let originalChatWidth = null;
+    let originalChatHeight = null;
+    let originalChatLeft = null;
+    let originalChatTop = null;
+    let isMaximized = false;
     
     // Dragging variables
     let isDragging = false;
@@ -27,11 +34,17 @@ document.addEventListener('DOMContentLoaded', function() {
     let originalX = 0;
     let originalY = 0;
     
-    // Configuration (for future use)
+    // Get the correct base URL from the global APP_URL variable if available
+    const baseUrl = (typeof APP_URL !== 'undefined') ? APP_URL : '';
+    
+    // Update configuration to use our proxy with Mistral AI credentials
     const config = {
-        apiKey: '', // This will be set later
-        apiEndpoint: 'https://api.example.com/chat', // Replace with actual API endpoint
-        model: 'gpt-3.5-turbo' // Example model name
+        apiKey: 'vHrsX9bWGF3AW7fR0hblwIQzSekJQHa1', // Mistral AI API key
+        apiEndpoint: `${baseUrl}/api/chat-proxy.php`, // Fixed: Use proper path to API
+        model: 'mistral-medium', // Default Mistral AI model
+        debugMode: false, // Debug mode flag
+        retryAttempts: 1, // Number of retry attempts for API calls
+        retryDelay: 1000 // Delay between retry attempts in milliseconds
     };
     
     // Open chat window when icon is clicked
@@ -53,10 +66,59 @@ document.addEventListener('DOMContentLoaded', function() {
         chatbotIcon.style.display = 'flex';
     });
     
-    // Minimize chat window
-    chatbotMinimize.addEventListener('click', function() {
-        chatbotWindow.style.display = 'none';
-        chatbotIcon.style.display = 'flex';
+    // Maximize/restore chat window
+    chatbotMaximize.addEventListener('click', function() {
+        if (!isMaximized) {
+            // Store current dimensions and position before maximizing
+            const rect = chatbotWindow.getBoundingClientRect();
+            originalChatWidth = rect.width;
+            originalChatHeight = rect.height;
+            originalChatLeft = chatbotWindow.style.left;
+            originalChatTop = chatbotWindow.style.top;
+            
+            // Set to maximized dimensions (85% of viewport)
+            const maxWidth = window.innerWidth * 0.85;
+            const maxHeight = window.innerHeight * 0.85;
+            
+            // Center on screen
+            const leftPos = (window.innerWidth - maxWidth) / 2;
+            const topPos = (window.innerHeight - maxHeight) / 2;
+            
+            // Apply new dimensions and position
+            chatbotWindow.style.width = `${maxWidth}px`;
+            chatbotWindow.style.height = `${maxHeight}px`;
+            chatbotWindow.style.left = `${leftPos}px`;
+            chatbotWindow.style.top = `${topPos}px`;
+            
+            // Update icon to show restore option
+            chatbotMaximize.innerHTML = '<i class="bi bi-arrows-angle-contract"></i>';
+            chatbotMaximize.title = "Restore window";
+            
+            // Set maximized state
+            isMaximized = true;
+        } else {
+            // Restore to original dimensions and position
+            chatbotWindow.style.width = originalChatWidth ? `${originalChatWidth}px` : '350px';
+            chatbotWindow.style.height = originalChatHeight ? `${originalChatHeight}px` : '450px';
+            chatbotWindow.style.left = originalChatLeft || 'auto';
+            chatbotWindow.style.top = originalChatTop || 'auto';
+            
+            // If original position was not set, use default
+            if (!originalChatLeft && !originalChatTop) {
+                chatbotWindow.style.right = '0';
+                chatbotWindow.style.bottom = '80px';
+            }
+            
+            // Update icon to show maximize option
+            chatbotMaximize.innerHTML = '<i class="bi bi-arrows-fullscreen"></i>';
+            chatbotMaximize.title = "Maximize window";
+            
+            // Reset maximized state
+            isMaximized = false;
+        }
+        
+        // Adjust scrolling after resize
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
     });
     
     // Make the chatbot draggable by the header
@@ -282,7 +344,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const messageContent = document.createElement('div');
         messageContent.className = sender === 'user' ? 'user-message-content' : 'ai-message-content';
-        messageContent.textContent = message;
+        
+        // Check if this is an error message with HTML content
+        if (sender === 'ai' && message.includes('<details>')) {
+            messageContent.innerHTML = message;
+        } else {
+            messageContent.textContent = message;
+        }
         
         messageElement.appendChild(messageContent);
         chatbotMessages.appendChild(messageElement);
@@ -291,9 +359,82 @@ document.addEventListener('DOMContentLoaded', function() {
         chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
     }
     
-    // Process the message (will be replaced with actual API call later)
+    // Process the message
     function processMessage(message) {
-        // For now, just simulate a response
+        try {
+            logDebug("Calling Mistral AI API with message:", message);
+            callChatAPI(message);
+        } catch (e) {
+            logError("Failed to call API:", e);
+            displayDetailedError(e);
+            // Fallback to placeholder responses if API fails
+            fallbackResponse(message);
+        }
+    }
+    
+    // Enhanced debug logging
+    function logDebug(...args) {
+        if (config.debugMode) {
+            console.log(`[Chatbot Debug]`, ...args);
+        } else {
+            console.log(...args);
+        }
+    }
+    
+    // Enhanced error logging
+    function logError(...args) {
+        console.error(`[Chatbot Error]`, ...args);
+    }
+    
+    // Display detailed error in chat
+    function displayDetailedError(error, additionalInfo = {}) {
+        if (!config.debugMode) {
+            // Simple error message for non-debug mode
+            addMessageToChat('ai', `Sorry, I encountered a problem: ${error.message}. Enable debug mode for more details.`);
+            return;
+        }
+        
+        // Create detailed error message with collapsible sections
+        const errorTime = new Date().toISOString();
+        const errorStack = error.stack || 'No stack trace available';
+        const errorName = error.name || 'Unknown Error';
+        const errorCode = error.code || 'No error code';
+        
+        let networkInfo = '';
+        if (additionalInfo.status) {
+            networkInfo = `
+                <p><strong>Status:</strong> ${additionalInfo.status}</p>
+                <p><strong>Status Text:</strong> ${additionalInfo.statusText || 'N/A'}</p>
+                <p><strong>URL:</strong> ${additionalInfo.url || 'N/A'}</p>
+                <p><strong>Response Type:</strong> ${additionalInfo.responseType || 'N/A'}</p>
+            `;
+        }
+        
+        const detailedMessage = `
+            <div class="error-container">
+                <p>❌ Error: ${error.message}</p>
+                <details>
+                    <summary>Technical Details (Click to expand)</summary>
+                    <div class="error-details">
+                        <p><strong>Time:</strong> ${errorTime}</p>
+                        <p><strong>Type:</strong> ${errorName}</p>
+                        <p><strong>Code:</strong> ${errorCode}</p>
+                        ${networkInfo}
+                        <details>
+                            <summary>Stack Trace</summary>
+                            <pre>${errorStack}</pre>
+                        </details>
+                        <p><em>You can share this information with support to help diagnose the issue.</em></p>
+                    </div>
+                </details>
+            </div>
+        `;
+        
+        addMessageToChat('ai', detailedMessage);
+    }
+    
+    // Fallback response function in case API fails
+    function fallbackResponse(message) {
         setTimeout(() => {
             const responses = [
                 "Thanks for your message! When an API key is configured, I'll provide a more intelligent response.",
@@ -304,60 +445,176 @@ document.addEventListener('DOMContentLoaded', function() {
             const randomResponse = responses[Math.floor(Math.random() * responses.length)];
             addMessageToChat('ai', randomResponse);
         }, 1000);
-        
-        // This is where the API call will go in the future
-        // callChatAPI(message);
     }
     
-    // Function to call the chat API (for future implementation)
-    async function callChatAPI(message) {
-        // Check if API key is configured
-        if (!config.apiKey) {
-            addMessageToChat('ai', "The AI service is not yet configured. Please add an API key.");
-            return;
-        }
+    // Function to call the chat API via our proxy
+    async function callChatAPI(message, retryCount = 0) {
+        let typingIndicator = null;
         
         try {
             // Add a typing indicator
-            const typingIndicator = document.createElement('div');
+            typingIndicator = document.createElement('div');
             typingIndicator.className = 'ai-message typing-indicator';
             typingIndicator.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
             chatbotMessages.appendChild(typingIndicator);
             
-            // This is where the actual API call would go
-            // const response = await fetch(config.apiEndpoint, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //         'Authorization': `Bearer ${config.apiKey}`
-            //     },
-            //     body: JSON.stringify({
-            //         model: config.model,
-            //         messages: [
-            //             { role: "system", content: "You are a helpful assistant." },
-            //             { role: "user", content: message }
-            //         ]
-            //     })
-            // });
+            // Debug log the full URL we're calling
+            const fullUrl = config.apiEndpoint;
+            logDebug("Making API request to Mistral AI via proxy at URL:", fullUrl);
+            
+            // Enhanced endpoint logging to help with debugging
+            if (config.debugMode) {
+                console.log("API URL structure:", {
+                    window_location: window.location.toString(),
+                    origin: window.location.origin,
+                    pathname: window.location.pathname,
+                    fullApiUrl: fullUrl
+                });
+            }
+            
+            // Diagnostics: Log connection status
+            const connectionStatus = navigator.onLine ? 'online' : 'offline';
+            logDebug(`Browser connection status: ${connectionStatus}`);
+            
+            // Start timestamp for performance measurement
+            const startTime = performance.now();
+            
+            // FIXED: Simplified request to only send the message to the proxy
+            // The proxy will handle all API-specific formatting
+            const response = await fetch(fullUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: message
+                })
+            });
+            
+            // Calculate request duration
+            const requestDuration = performance.now() - startTime;
+            logDebug(`Request completed in ${requestDuration.toFixed(2)}ms`);
+            
+            // Network diagnostics info
+            const networkInfo = {
+                status: response.status,
+                statusText: response.statusText,
+                url: response.url,
+                responseType: response.headers.get('content-type')
+            };
+            
+            // Check if the response is OK
+            if (!response.ok) {
+                // If not a JSON response, get the text
+                const contentType = response.headers.get("content-type");
+                if (contentType && contentType.indexOf("application/json") === -1) {
+                    const text = await response.text();
+                    logError("Non-JSON response received:", text);
+                    
+                    // Create a more descriptive error
+                    const error = new Error(`Server returned ${response.status}: ${response.statusText}`);
+                    error.code = response.status;
+                    error.responseText = text;
+                    
+                    throw error;
+                }
+                
+                // Create a descriptive network error
+                const error = new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+                error.code = response.status;
+                throw error;
+            }
+            
+            // Parse the response
+            const data = await response.json();
+            logDebug("API response data:", data);
             
             // Remove typing indicator
-            chatbotMessages.removeChild(typingIndicator);
+            if (typingIndicator && typingIndicator.parentNode) {
+                chatbotMessages.removeChild(typingIndicator);
+                typingIndicator = null;
+            }
             
-            // For now, just add a placeholder message
-            addMessageToChat('ai', "This is where the AI response would appear.");
+            // Check for errors in response
+            if (data.error) {
+                const apiError = new Error(`API error: ${data.error.message || JSON.stringify(data.error)}`);
+                apiError.code = data.error.code || 'API_ERROR';
+                apiError.apiError = data.error;
+                throw apiError;
+            }
+            
+            // Extract the assistant's response from Mistral API format
+            let assistantMessage;
+            if (data.choices && data.choices.length > 0 && data.choices[0].message) {
+                assistantMessage = data.choices[0].message.content;
+            } else {
+                // Handle case where response format is unexpected
+                logError("Unexpected API response format:", data);
+                const formatError = new Error("Received unexpected response format from API");
+                formatError.code = 'UNEXPECTED_FORMAT';
+                formatError.data = data;
+                throw formatError;
+            }
+            
+            // Add the response to the chat
+            addMessageToChat('ai', assistantMessage);
             
         } catch (error) {
-            console.error('Error calling chat API:', error);
-            addMessageToChat('ai', "Sorry, there was an error communicating with the AI service.");
+            logError('Error calling chat API:', error);
+            
+            // Remove typing indicator if it exists
+            if (typingIndicator && typingIndicator.parentNode) {
+                chatbotMessages.removeChild(typingIndicator);
+            }
+            
+            // Try to retry if we haven't exceeded retry attempts
+            if (retryCount < config.retryAttempts) {
+                logDebug(`Retrying API call (${retryCount + 1}/${config.retryAttempts})...`);
+                // Add a brief message indicating a retry
+                addMessageToChat('ai', `Network issue detected. Retrying... (${retryCount + 1}/${config.retryAttempts})`);
+                
+                // Wait before retrying
+                await new Promise(resolve => setTimeout(resolve, config.retryDelay));
+                return callChatAPI(message, retryCount + 1);
+            }
+            
+            // Collect additional diagnostic information
+            const diagnosticInfo = {
+                browserInfo: navigator.userAgent,
+                timestamp: new Date().toISOString(),
+                online: navigator.onLine
+            };
+            
+            // Show detailed error message with diagnostics
+            displayDetailedError(error, diagnosticInfo);
         }
     }
     
     // Function to set the API key (can be called from outside)
     window.setChatbotApiKey = function(apiKey) {
         config.apiKey = apiKey;
-        console.log('API key has been set');
+        logDebug('API key has been set');
+    };
+    
+    // Function to get diagnostic info (can be called from outside)
+    window.getChatbotDiagnostics = function() {
+        const diagnostics = {
+            config: {
+                apiEndpoint: config.apiEndpoint,
+                model: config.model,
+                debugMode: config.debugMode,
+                retryAttempts: config.retryAttempts
+            },
+            browser: {
+                userAgent: navigator.userAgent,
+                language: navigator.language,
+                platform: navigator.platform,
+                online: navigator.onLine
+            },
+            timestamp: new Date().toISOString()
+        };
         
-        // You could also store this in localStorage if needed
-        // localStorage.setItem('chatbotApiKey', apiKey);
+        console.log('Chatbot diagnostics:', diagnostics);
+        return diagnostics;
     };
 });

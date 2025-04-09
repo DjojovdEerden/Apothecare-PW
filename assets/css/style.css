@@ -189,6 +189,29 @@ body {
     background-color: white;
 }
 
+/* Quantity control styling for product pages */
+.product-quantity-control .input-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 130px;
+}
+
+.product-quantity-control .input-group .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 38px;
+    padding: 0;
+    z-index: 0;
+}
+
+.product-quantity-control .form-control {
+    text-align: center;
+    z-index: 0;
+}
+
 /* Modern input styles */
 .form-control {
     border-radius: 8px;
@@ -511,15 +534,15 @@ footer {
 }
 
 .ai-chatbot-window {
-    position: fixed; /* Change from absolute to fixed to ensure it stays in view while dragging */
+    position: fixed;
     bottom: 80px;
     right: 0;
     width: 350px;
     height: 450px;
-    min-width: 250px;  /* Minimum width to maintain usability */
-    min-height: 300px; /* Minimum height to maintain usability */
-    max-width: 90vw;   /* Maximum width for smaller screens */
-    max-height: 80vh;  /* Maximum height for smaller screens */
+    min-width: 250px;
+    min-height: 300px;
+    max-width: 90vw;
+    max-height: 80vh;
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
@@ -527,7 +550,7 @@ footer {
     flex-direction: column;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    z-index: 1010; /* Increase z-index to ensure it stays on top */
+    z-index: 1010;
 }
 
 .ai-chatbot-header {
@@ -537,18 +560,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: move; /* Change cursor to indicate draggability */
-    user-select: none; /* Prevent text selection which can interfere with dragging */
+    cursor: move;
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
 
 .ai-chatbot-window.dragging {
-    transition: none !important; /* Ensure no transition during drag for better performance */
+    transition: none !important;
     user-select: none;
-    opacity: 0.95; /* Slightly transparent while dragging for visual feedback */
-    pointer-events: auto !important; /* Make sure it can receive events */
+    opacity: 0.95;
+    pointer-events: auto !important;
 }
 
 .ai-chatbot-title {
@@ -572,11 +595,46 @@ footer {
     justify-content: center;
     cursor: pointer;
     color: white;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .ai-chatbot-controls button:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-1px);
+}
+
+.ai-chatbot-controls button:active {
+    transform: translateY(0px);
+}
+
+/* Specific styles for minimize button */
+.ai-chatbot-minimize {
+    font-size: 20px;
+}
+
+.ai-chatbot-minimize i {
+    position: relative;
+    top: -2px; /* Adjust the dash position */
+}
+
+/* Specific styles for maximize button */
+.ai-chatbot-maximize {
+    font-size: 16px;
+}
+
+.ai-chatbot-maximize i {
+    position: relative;
+}
+
+/* Specific styles for close button */
+.ai-chatbot-close:hover {
+    background: rgba(255, 0, 0, 0.2) !important;
+}
+
+.ai-chatbot-close i {
+    font-size: 18px;
 }
 
 .ai-chatbot-body {
@@ -586,7 +644,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    min-height: 150px; /* Ensure there's room for at least a few messages */
+    min-height: 150px;
 }
 
 .ai-message, .user-message {
@@ -683,6 +741,30 @@ footer {
 
 .ai-chatbot-send i {
     font-size: 16px;
+}
+
+/* Add styling for error details in chat */
+.error-container {
+    background-color: #ffebee;
+    border-radius: 8px;
+    padding: 10px;
+    color: #d32f2f;
+    font-size: 14px;
+}
+
+.error-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.error-details pre {
+    white-space: pre-wrap;
+    overflow-x: auto;
+    max-height: 200px;
 }
 
 /* Make chatbot responsive */

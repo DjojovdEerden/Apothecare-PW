@@ -56,8 +56,8 @@
                         <div class="col-auto">
                             <label for="quantity" class="col-form-label">Quantity:</label>
                         </div>
-                        <div class="col-auto">
-                            <div class="input-group" style="width: 130px;">
+                        <div class="col-auto product-quantity-control">
+                            <div class="input-group">
                                 <button type="button" id="decrease-quantity" class="btn btn-outline-secondary">-</button>
                                 <input type="number" id="quantity" name="quantity" value="1" min="1" 
                                        max="<?= min($product['in_stock'], 10) ?>" class="form-control text-center">

@@ -968,3 +968,14 @@ Stack trace:
 [08-Apr-2025 10:40:38 Europe/Berlin] Add to cart success: true
 [08-Apr-2025 10:40:38 Europe/Berlin] Cart contents after adding: {"4":6}
 [08-Apr-2025 13:17:20 Europe/Berlin] Initializing empty cart in session
+[08-Apr-2025 14:50:05 Europe/Berlin] Initializing empty cart in session
+[08-Apr-2025 15:24:26 Europe/Berlin] Adding product to cart: Product ID=4, Quantity=10
+[08-Apr-2025 15:24:26 Europe/Berlin] Cart::addItem called with product_id=4, quantity=10
+[08-Apr-2025 15:24:26 Europe/Berlin] Added new item to cart: Product ID 4, quantity: 10
+[08-Apr-2025 15:24:26 Europe/Berlin] Cart now contains: {"4":10}
+[08-Apr-2025 15:24:26 Europe/Berlin] Add to cart success: true
+[08-Apr-2025 15:24:26 Europe/Berlin] Cart contents after adding: {"4":10}
+[09-Apr-2025 11:16:28 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 202
+[09-Apr-2025 11:16:28 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 204
+[09-Apr-2025 11:16:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 202
+[09-Apr-2025 11:16:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\test\views\products\view.php on line 204

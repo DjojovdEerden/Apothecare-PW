@@ -53,8 +53,8 @@
             <div class="ai-chatbot-header">
                 <div class="ai-chatbot-title">AI Assistant</div>
                 <div class="ai-chatbot-controls">
-                    <button class="ai-chatbot-minimize" id="chatbot-minimize">
-                        <i class="bi bi-dash"></i>
+                    <button class="ai-chatbot-maximize" id="chatbot-maximize" title="Maximize window">
+                        <i class="bi bi-arrows-fullscreen"></i>
                     </button>
                     <button class="ai-chatbot-close" id="chatbot-close">
                         <i class="bi bi-x"></i>
@@ -83,5 +83,13 @@
     
     <!-- Chatbot Script -->
     <script src="<?= APP_URL ?>/assets/js/chatbot.js"></script>
+    <script>
+        // Initialize chatbot with API key
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof setChatbotApiKey === 'function') {
+                setChatbotApiKey('vHrsX9bWGF3AW7fR0hblwIQzSekJQHa1');
+            }
+        });
+    </script>
 </body>
 </html>
