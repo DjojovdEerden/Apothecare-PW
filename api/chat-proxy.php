@@ -78,7 +78,7 @@ try {
         'model' => $model,
         'messages' => [
             [
-                'role' => 'system',  // Changed from 'system, helper, assistant' to just 'system'
+                'role' => 'system', 
                 'content' => 'You are a helpful assistant for a pharmacy website called Apothecare. Focus on health and wellness topics. Keep responses very concise (2-3 short sentences maximum).'
             ],
             [
@@ -86,7 +86,7 @@ try {
                 'content' => $message
             ]
         ],
-        'max_tokens' => 150,
+        'max_tokens' => 300,
         'temperature' => 0.7
     ];
 
